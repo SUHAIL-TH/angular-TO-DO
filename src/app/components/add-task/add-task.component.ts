@@ -19,8 +19,9 @@ export class AddTaskComponent {
   }
   
   onSubmit(){
-    if(!this.text){
+    if(!this.text.trim() ||!this.day.trim()){
       alert("please add a task")
+      return
     }
     const newTask={
       text:this.text,

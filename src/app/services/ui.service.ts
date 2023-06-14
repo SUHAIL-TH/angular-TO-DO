@@ -9,7 +9,7 @@ export class UiService {
   private subject=new Subject<any>();
   constructor() { }
   toggleAddTask():void{
-    console.log(123)
+  
     this.showAddtask=!this.showAddtask;
     this.subject.next(this.showAddtask)
   }
